@@ -9,12 +9,13 @@ body {
 /* HEADER */
 
 header {
-    background: linear-gradient(
-        rgba(0,0,0,0.65),
-        rgba(0,0,0,0.65)
-    ),
-    url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1200")
-    center/cover;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1200")
+        center/cover;
 
     color: white;
     text-align: center;
@@ -47,11 +48,13 @@ header p {
 
 .btn {
     display: inline-block;
+
     padding: 12px 24px;
 
     background: #d4a373;
 
     color: white;
+
     text-decoration: none;
 
     border-radius: 8px;
@@ -86,7 +89,10 @@ section h2 {
 
 .services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
     gap: 20px;
 }
 
@@ -97,7 +103,7 @@ section h2 {
 
     border-radius: 15px;
 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .card h3 {
@@ -108,6 +114,29 @@ section h2 {
 
 .about {
     text-align: center;
+}
+
+/* GALERIE */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 /* CONTACT */
@@ -121,7 +150,7 @@ section h2 {
 
     text-align: center;
 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .contact-box p {
@@ -154,6 +183,11 @@ footer {
 
     header p {
         font-size: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        box-sizing: border-box;
     }
 
 }
